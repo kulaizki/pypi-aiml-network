@@ -33,13 +33,13 @@ Python 3.10+ recommended (tested on 3.14).
 
 ```bash
 # First run: crawl PyPI (~10 min for ~3,000 packages)
-python main.py
+python3 main.py
 
 # Subsequent runs: reuse cache, rebuild graphs and analysis (~30s)
-python main.py --skip-collect
+python3 main.py --skip-collect
 
 # Verify outputs
-python scripts/verify.py
+python3 scripts/verify.py
 ```
 
 The crawler is resumable. `data/cache/` is gitignored (~700 MB), so each clone rebuilds it locally on first run.
@@ -47,11 +47,11 @@ The crawler is resumable. `data/cache/` is gitignored (~700 MB), so each clone r
 ## Per-stage commands
 
 ```bash
-python -m src.collect --max-nodes 3000 --max-depth 5 --include-optional
-python -m src.build_graph
-python -m src.analysis --variant required_only
-python -m src.visualize --variant with_optional
-python -m src.compare
+python3 -m src.collect --max-nodes 3000 --max-depth 5 --include-optional
+python3 -m src.build_graph
+python3 -m src.analysis --variant required_only
+python3 -m src.visualize --variant with_optional
+python3 -m src.compare
 ```
 
 ## Flags
