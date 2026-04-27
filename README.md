@@ -20,7 +20,7 @@ The same crawl produces two graphs with different stories:
 ## Setup
 
 ```bash
-git clone <repo-url> pypi-aiml-network
+git clone https://github.com/kulaizki/pypi-aiml-network.git
 cd pypi-aiml-network
 python3 -m venv .venv
 source .venv/bin/activate
