@@ -1,0 +1,6 @@
+networkx>=3.6
+requests>=2.32
+matplotlib>=3.10
+pyvis>=0.3
+tqdm>=4.66
+packaging>=24
